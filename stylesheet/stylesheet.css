@@ -1,0 +1,153 @@
+/* first box */
+form#info{
+    display: flex;
+    flex-flow: row wrap;
+    width: 95%;
+    margin: auto;
+}
+
+form#info > fieldset{
+   flex: 1 1 300px; 
+   padding: 10px; 
+   margin: 10px; 
+   
+}
+
+fieldset.div{
+    padding: 10px;
+    margin: 10px;
+}
+
+div.formRow {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 7px 0px;
+ }
+ 
+ div.formRow > * {
+    flex: 1 1 150px;
+ }
+
+ div > label{
+     font-size: large;
+ }
+
+ legend{
+    background-color: rgb(223, 213, 213);
+    font-size: large;
+    padding: 5px;
+ }
+
+ /* second box */
+
+form#Quiz{
+    display: flex;
+    flex-flow: row wrap;
+    width: 95%;
+    margin: auto;
+}
+
+form#Quiz > fieldset{
+    flex: 1 1 300px; 
+    margin: 10px; 
+    
+ }
+
+.Question1 {
+    margin: 15px 10px 15px 10px;
+}
+
+.Question2{
+    margin: 15px 10px 15px 10px;
+}
+
+.Question3{
+    margin: 15px 10px 15px 10px;
+}
+
+.Question4{
+    margin: 15px 10px 15px 10px;
+}
+
+.Question5{
+    margin: 15px 10px 15px 10px;
+}
+.Question5 > img{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+}
+
+.label5{
+    display: flex;
+    flex-direction: column;
+    float: left;
+    font-size: large;
+    width: 20%;
+}
+.label5 > label{
+    padding: 0px;
+    height: 30px;
+}
+.Question6{
+    margin: 15px 10px 15px 10px;
+}
+.Question6 > img{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+}
+
+
+.label6{
+    display: flex;
+    flex-direction: column;
+    float: left;
+    font-size: large;
+    width: 30%;
+}
+.label6 > label{
+    padding: 0px;
+    height: 30px;
+}
+
+.Question7{
+    margin: 15px 10px 15px 10px;
+    float: left;
+    font-size: large;
+}
+.input7{
+    float: left;
+    width: 350px;
+    height: 100px;
+}
+.input7>input{
+    width: 100%;
+    height: 100%;
+}
+.label7{
+    float: left;
+    width: 50%;
+}
+
+div#buttons{
+    width: 95%;
+    margin: auto;
+    font-size: large;
+}
+
+button {
+    font-size: 1.2em;
+    padding: 5px;
+    margin: 10px;
+ }
+
+input#studName:focus:valid,
+input#studEmail:focus:valid{
+   background: rgb(157, 250, 157) url("../images/rb_valid.png") right no-repeat;
+}
+
+input#studName:focus:invalid,
+input#studEmail:focus:invalid{
+   background: rgb(252, 149, 149) url("../images/rb_invalid.png") right no-repeat;
+}

@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>lab6-forms</title>
+    <link rel = "stylesheet" href = "stylesheet/stylesheet.css">
+</head>
+
+<body>
+    <header>
+        <h3 style="color: red;">Fields with * are required</h3>
+        <section class = "section1">
+            <form id = "info" action="https://formspree.io/f/xnqwvydj" method="POST">
+                <fieldset id = "personInfo">
+                    <legend>Your Personal Information</legend>
+
+                    <div class = "formRow">
+                        <label for="studName">Full Name*</label>
+                        <input name="studName" id="studName" type="text" placeholder="first and last name" required />   
+                    </div>
+
+                    <div class = "formRow">
+                        <label for="studEmail">Email Address*</label>
+                        <input name="studEmail" id="studEmail" type="email" placeholder="Example@somewhere.com" required />
+                    </div>
+
+                    <div class="formRow">
+                        <label for="studStudy">Current Study</label>
+                        <input name="studStudy" id="studStudy" type="text" value="Douglas college" />
+                    </div>
+
+                    <div class="formRow">
+                        <label for="studAge">Age</label>
+                        <input name="studAge" id="studAge" type="text" value="20"/>
+                    </div>
+                </fieldset>
+            </form>
+        </section>  
+    </header>
+
+    <section class = "section2">
+        <form id = "Quiz" action="https://formspree.io/f/xnqwvydj" method="POST">
+            <fieldset id = "Quiz">
+                <legend>Your Quiz</legend>
+
+                <div class = "Question1">
+                    <p>1. What is the result of the following equation?</p>
+                    <label for = "Q1">2<sup>2</sup>x5 </label>
+                    <input name="Q1" id="Q1" type="text" />
+                </div>
+
+                <div class = "Question2">
+                    <label for = "Q2">2. What does the acronym W3C stand for?</label>
+                    <select name="Q2A" id="Q2">
+                        <option value="choice1" selected>3rd world war coalition</option> 
+                        <option value="choice2">World Wide WarCraft</option> 
+                        <option value="choice3">World Wide Web Consortium</option>
+                        <option value="choice4">World Wide Welcoming Committe</option>
+                     </select>
+                </div>
+
+                <div class = "Question3">
+                    <lable for = "Q3">3. CSS is an abbreviation of <input name = "Q3A" id = "Q3" type = "text"/> style sheet </lable>
+                </div>
+
+                <label class = "Question4" for = "Q4">4. Select all the (scripting) languages we learn in CSIS1280?</label>
+                <div class = "Question4">               
+                    <input name="HTML" id="Q4" value="yes" type="checkbox"/>
+                    <lable for = "Q4">HTML</lable>
+                    <input name="CSS" id="CSS" value="yes" type="checkbox"/>
+                    <lable for = "Q4">CSS</lable>
+                    <input name="JavaScript" id="JavaScript" value="yes" type="checkbox"/>
+                    <lable for = "Q4">JavaScript</lable>
+                    <input name="PHP" id="PHP" value="yes" type="checkbox"/>
+                    <lable for = "Q4">PHP</lable>
+                    <input name="C#" id="C#" value="yes" type="checkbox"/>
+                    <lable for = "Q4">C#</lable>
+                    <input name="Java" id="Java" value="yes" type="checkbox"/>
+                    <lable for = "Q4">Java</lable>
+                </div>
+
+                <lable class = "Question5" for = "Q5">5. Consider the picture of a DOM structure below. Which of the following selector
+                    <b>CANNOT</b> be used to select all of the < p >elements?
+                </lable>
+                <div class = "Question5">
+                    <div class = "label5">
+                        <label for="P"><input name="Q5" id="P" value="yes" type="radio" />P</label>
+                        <label for="h1 ~ p"><input name="Q5" id="h1 ~ p" value="no" type="radio" />h1 ~ p</label>
+                        <label for="article p"><input name="Q5" id="article p" value="no" type="radio" />article p</label> 
+                        <label for="article"><input name="Q5" id="article" value="no" type="radio" />article > p</label>                    
+                        <label for="h1 + p"><input name="Q5" id="h1 + p" value="no" type="radio" />h1 + p</label>
+                    </div>
+                    <div class ="img5">
+                        <img src="images/q5.png"/>
+                    </div>
+                </div>
+
+                <lable class = "Question6" for = "Question6">6. Consider the picture of a DOM structure below. Which of the following selector
+                    <b>CAN</b> be used to select all of the < li >elements?
+                </lable>
+                <div class = "Question6">
+                    <div class = "label6">
+                        <label for="li"><input name="Q6" id="li" value="yes" type="radio" />li</label>
+                        <label for="li:nth-child(2n+1)"><input name="Q6" id="li:nth-child(2n+1)" value="no" type="radio" />li:nth-child(2n+1)</label>
+                        <label for="ul>li:(2n+1)"><input name="Q6" id="ul>li:(2n+1)" value="no" type="radio" />ul > li:(2n+1)</label>
+                        <label for="ul>li"><input name="Q6" id="ul>li" value="no" type="radio" />ul > li</label>
+                        <label for="ul >li(2n+1)"><input name="Q6" id="ul >li(2n+1)" value="no" type="radio" />ul >li(2n+1)</label>
+                    </div>
+                    <div class = "img6">
+                        <img src="images/q6.png"/>
+                    </div>
+                </div>
+
+                <div class = "Question7">
+                    <div class = label7>
+                        <lable for = "Question7">7. Douglas College and the Coquitlam campus was named after the
+                            former Governor and Liutenant-Governor of British Columbia. What are thier names?
+                        </lable>
+                    </div>
+                    <div class = "input7">
+                        <input name = "Q7" id = "Q7" type ="text" >
+                    </div>
+                </div>
+            </fieldset> 
+        </form>
+    </section>
+    <footer>
+        <div class = "buttons" id="buttons">
+            <button type="submit" value="Send">submit</button>
+            <button type="reset" value="reset">reset</button>
+        </div> 
+     </footer>
+</body>
+</html>
